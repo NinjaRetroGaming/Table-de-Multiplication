@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 	<title>Multiplication Projet Php</title>
 </head>
-<body>
+<body<?
 	<div id="Main_Contain">
 		<div id="Titres">
 			<h1> Atelier Php - Etape 1</h1>
@@ -30,35 +30,27 @@
 			      <OPTION VALUE="9">Table de 9</OPTION>
 			      <OPTION VALUE="10">Table de 10</OPTION>
 			    </SELECT>
+			  </FORM>
 			  <input type="reset" name="button" value="Annuler"></input>
 			  <input type="submit" name="button" value="Voir la Table"></input>
-			  </FORM>
 		</div>
-		<div class="checkbox">
-			<form method="post" action="Checkbox.php">
-				<INPUT type="checkbox" name="choix[]" value="1">Table de 1
-				<INPUT type="checkbox" name="choix[]" value="2">Table de 2<br>
-				<INPUT type="checkbox" name="choix[]" value="3">Table de 3
-				<INPUT type="checkbox" name="choix[]" value="4">Table de 4<br>
-				<INPUT type="checkbox" name="choix[]" value="5">Table de 5
-				<INPUT type="checkbox" name="choix[]" value="6">Table de 6<br>
-				<INPUT type="checkbox" name="choix[]" value="7">Table de 7
-				<INPUT type="checkbox" name="choix[]" value="8">Table de 8<br>
-				<INPUT type="checkbox" name="choix[]" value="9">Table de 9
-				<INPUT type="checkbox" name="choix[]" value="10">Table de 10
+		<div>
+			<form method="post" action="multiplication.php">
+				<INPUT type="checkbox" name="choix1" value="1">Table de 1
+				<INPUT type="checkbox" name="choix2" value="2">Table de 2<br>
+				<INPUT type="checkbox" name="choix3" value="3">Table de 3
+				<INPUT type="checkbox" name="choix4" value="4">Table de 4<br>
+				<INPUT type="checkbox" name="choix1" value="5">Table de 5
+				<INPUT type="checkbox" name="choix2" value="6">Table de 6<br>
+				<INPUT type="checkbox" name="choix3" value="7">Table de 7
+				<INPUT type="checkbox" name="choix4" value="8">Table de 8<br>
+				<INPUT type="checkbox" name="choix1" value="9">Table de 9
+				<INPUT type="checkbox" name="choix2" value="10">Table de 10
 				<br>
 				<input type="submit" value="Voir la table"></input>
-				<input type="reset" value="Annuler"></input>
+				<input type="submit" value="Annuler"></input>
 			</form> 
 		</div>
-		<div id="etapetrois">
-			<h1 class="kohaï"> Connaissez-vous vos tables de multiplication : 7 x 8 </h1>
-			<form id="question" method="post" action="question.php">
-			<input class="resultat" type="text" name="resultat" placeholder="Fais le bon choix !"></input>
-			<input class="annuler" type="reset" value="Annuler"></input>
-			<input class="voir" type="submit" value="Valider"></input>
-			</form>
-		</div> 
 	</div>
 </body>
 </html>
